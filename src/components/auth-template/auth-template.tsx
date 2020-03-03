@@ -6,7 +6,7 @@ import { AuthForm } from './components/form';
 import { BottomButtons } from './components/bottom-buttons';
 
 import { useAuthTemplateHandlers } from './auth-template.state';
-import { BOTTOM_NAV_BUTTONS } from 'src/services/auth/constants';
+import { BOTTOM_NAV_BUTTONS } from '../../services/auth/constants';
 
 //TODO: Define props types
 export const AuthScreenTemplate = (props: any) => {

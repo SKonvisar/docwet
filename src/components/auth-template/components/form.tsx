@@ -24,6 +24,8 @@ export const AuthForm = ({ onSubmit, screen }: IFormProps) => {
       <View>
         {fieldList.map((field: string, key: number) => {
           const error = errors[field] || '';
+          const isSecure = field === 'password';
+          
           return (
             <TextField
               key={key}
@@ -31,6 +33,7 @@ export const AuthForm = ({ onSubmit, screen }: IFormProps) => {
               error={error as string}
               label={field}
               onChangeText={handleChange(field)}
+              secureTextEntry={isSecure}
             />
           );
         })}
@@ -41,8 +44,8 @@ export const AuthForm = ({ onSubmit, screen }: IFormProps) => {
           {isSubmitting ? (
             <ActivityIndicator size="small" color="white" />
           ) : (
-            <Text style={formStyles.text}>LOG IN</Text>
-          )}
+              <Text style={formStyles.text}>LOG IN</Text>
+            )}
         </TouchableOpacity>
       </View>
     );

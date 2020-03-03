@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { AuthScreenTemplate } from '../../components/auth-template/auth-template';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
 
 const AuthStack = createStackNavigator();
 

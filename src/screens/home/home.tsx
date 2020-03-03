@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { actions } from '../../services/user/actions';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
 
 interface IHomeScreenProps {
   // TODO: Find out navigation props;

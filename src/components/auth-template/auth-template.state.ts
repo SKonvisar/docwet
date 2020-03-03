@@ -10,7 +10,7 @@ import {
 } from '../../services/auth/types';
 
 import { actions } from '../../services/user/actions';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
 
 type ISubmitFn<Values> = (values: Values) => void;
 type ISignInStrategy = ISubmitFn<IAuthSignIn>;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, ActivityIndicator } from 'react-native';
 import { useSelector } from 'react-redux';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
 
 interface ISplashScreenProps {
   // TODO: add navigation prop type

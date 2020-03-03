@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { HomeScreen } from '../home/home';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
 
 const HomeStack = createStackNavigator();
 
